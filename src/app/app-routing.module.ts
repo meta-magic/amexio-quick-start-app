@@ -1,3 +1,4 @@
+import { ActivityPanelComponent } from './component/activity-panel/activity-panel.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
@@ -17,6 +18,9 @@ const routes: Routes = [
     children: [
       {
         path: 'main',  canLoad: [RouteGuardService], component: MainComponent
+      },
+      {
+        path: 'activity',  canLoad: [RouteGuardService], component: ActivityPanelComponent
       }
     ]
   }
