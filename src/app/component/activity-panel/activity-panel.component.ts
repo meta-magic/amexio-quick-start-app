@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-activity-panel',
@@ -7,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivityPanelComponent implements OnInit {
   localData: any;
-
-  constructor() { 
+  employeeForm: FormGroup;
+  constructor(private fb: FormBuilder) { 
 
     this.localData = {
       "response": {
@@ -54,6 +55,13 @@ export class ActivityPanelComponent implements OnInit {
         ]
       }
     };  
+    this.employeeForm = this.fb.group({
+      FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      Email: ['', [Validators.required, Validators.email]],
+      Age: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
+      Gender: ['', [Validators.required]]
+    });
   }
 
   ngOnInit() {

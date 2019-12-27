@@ -23,20 +23,20 @@
         "badge": "32"
       },
       {
-        "text": "Registeration Details",
+        "text": "Employee Info",
         "icon" : "fa fa-id-card-o fa-fw",
         "mdaIcon" : "pages",
         "expand":false,
         "badge": "45",
         "children": [
             {
-                "text": "Employee Details",
+                "text": "Employee",
                 "icon" : "fa fa-address-book-o fa-fw",
                 "mdaIcon":"perm_contact_calendar",
                 "link" : "/home/activity"
             },
             { 
-            "text": "Designation & Department",
+            "text": "Department",
             "icon" : "fa fa-laptop fa-fw",
             "mdaIcon" : "create",
             "link":"/home/sample",
