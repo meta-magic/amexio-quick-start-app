@@ -1,0 +1,28 @@
+<amexio-nav amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [transparent]="true" [title]="'Amexio Quick Start App'" 
+  class="custom-nav" [enable-side-nav-position]="true" [logo]="'assets/images/amexio-logo.png'">
+  
+    <amexio-nav-item position-right [icon]="'fa fa-bell'" [type]="'button'">
+    </amexio-nav-item>
+
+
+    <amexio-nav-item #nav class="lastData" position-right [type]="'menucontainer'" [icon]="'fa fa-user fa-fw'"
+        [title]="title" [type]="'button'">
+        
+        <div style="color: black; width: 150px;padding: 5px;" *ngFor="let item of usermenu" class="advance-menu"
+            [ngClass]="{'advance-menu-seperator': item.seperator}">
+            <i [class]="item.icon"></i>
+            &nbsp;
+            <amexio-label style="cursor: pointer" (click)="userAction(item)" size="'small'" [enable-click]="true">
+                {{item.name}}
+            </amexio-label>
+        </div>
+    </amexio-nav-item>
+
+     
+    <amexio-nav-item position-left *ngFor="let items of menus" [type]="'menu'"
+        [title]="items.text" [data]="items.submenus" (onNavItemClick)="externalLink($event)">
+    </amexio-nav-item>
+</amexio-nav>
+<div style="padding: 75px 1% 0px 1%;">
+    <router-outlet></router-outlet>
+</div>

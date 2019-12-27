@@ -1,0 +1,65 @@
+<div class="login-page-div">
+    <amexio-nav  amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [transparent]="true" 
+      [enable-side-nav-position]="true" [title]="'Amexio Quick Start App'" 
+      class="custom-nav" [logo]="'assets/images/amexio-logo.png'">
+    </amexio-nav>
+    <amexio-layout-columns [orientation]="'vertical'" [border]="false" [alignment]="'center'">
+        <amexio-layout-item>
+            <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'end'">
+                <amexio-layout-item> &nbsp; </amexio-layout-item>
+                <amexio-layout-item class="login-page">
+                    <amexio-card-ce class="custom-card" amexioThemeStyle [theme-style]="'round-edge'">
+
+                        <amexio-header-ce [border-bottom]="true">
+                            <amexio-label>
+                                SIGN IN
+                            </amexio-label>
+                        </amexio-header-ce>
+
+                        <amexio-body-ce>
+                            <ng-container>
+                                <form [formGroup]="signInGroup">
+                                    <amexio-layout-columns [border]="false" [fit]="true" [alignment]="'center'" [orientation]="'vertical'">
+                                        <amexio-layout-item>
+                                            <amexio-text-input formControlName="userName" [field-label]="'User Id'" name="email" [place-holder]="'Enter User Id'" 
+                                                [allow-blank]="false"
+                                                [(ngModel)]="userName" [error-msg]="'Please Enter Email Id'" [icon-feedback]="true">
+                                            </amexio-text-input>
+
+                                        </amexio-layout-item>
+                                        <amexio-layout-item>
+                                            <amexio-password-input formControlName="password" [field-label]="'Password'" name="password" [place-holder]="'Enter password'"
+                                                [allow-blank]="false" [(ngModel)]="password" [error-msg]="'Please Enter password'"
+                                                [show-password]="true" [icon-feedback]="true">
+                                            </amexio-password-input>
+                                        </amexio-layout-item>
+                                        <amexio-layout-item>
+                                            <amexio-label [size]="'xsmall'" [enable-click]="true">
+                                                Forgot Password?
+                                            </amexio-label>
+                                        </amexio-layout-item>
+                                    </amexio-layout-columns>
+                                </form>
+                            </ng-container>
+
+                        </amexio-body-ce>
+                        <amexio-action-ce border-top=true [align]="'center'">
+                            <amexio-button [icon]="'fa fa-sign-in'" [label]="'Sign In'" [disabled]="!signInGroup.valid" [type]="'theme-color'" (onClick)="loginHandle()"
+                                [tooltip]="'Login'" [block]="true">
+                            </amexio-button>
+                        </amexio-action-ce>
+                    </amexio-card-ce>
+                </amexio-layout-item>
+                <amexio-layout-item> &nbsp;</amexio-layout-item>
+            </amexio-layout-columns>
+
+        </amexio-layout-item>
+    </amexio-layout-columns>
+</div>
+<!-- <amexio-notification [data]="errorMsgData" [amexio-color]="'amexio-red'" [vertical-position]="'top'" [horizontal-position]="'right'" [close-on-escape]="true"
+     [auto-dismiss-msg]="false">
+</amexio-notification> -->
+
+<amexio-spinner [show]="showLoader" [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
+    [color]="'blue'">
+</amexio-spinner>
