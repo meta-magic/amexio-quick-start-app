@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
 import { LoginComponent } from './component/login/login.component';
-import { MainComponent } from './component/main/main.component';
+
 import { RouteGuardService } from './services/route.guard.service';
 
 const routes: Routes = [
@@ -15,14 +15,6 @@ const routes: Routes = [
   },
   {
     path: 'home' , canActivate: [RouteGuardService], component: HomeComponent,
-    children: [
-      {
-        path: 'main',  canLoad: [RouteGuardService], component: MainComponent
-      },
-      {
-        path: 'activity',  canLoad: [RouteGuardService], component: ActivityPanelComponent
-      }
-    ]
   }
 ];
 

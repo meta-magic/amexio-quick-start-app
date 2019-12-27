@@ -1,14 +1,15 @@
-<amexio-nav amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [transparent]="true" [title]="'Amexio Quick Start App'" 
-  class="custom-nav" [enable-side-nav-position]="true" [logo]="'assets/images/amexio-logo.png'">
+<amexio-homepage-ce [type]="'1'">
+  <amexio-homepage-northpanel>
+    <amexio-nav amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [transparent]="true" [title]="'Amexio Quick Start App'" 
+        class="custom-nav" [enable-side-nav-position]="true" [logo]="'assets/images/amexio-logo.png'">
   
     <amexio-nav-item position-right [icon]="'fa fa-bell'" [type]="'button'">
-    </amexio-nav-item>
-
-
+    </amexio-nav-item> 
+    
     <amexio-nav-item #nav class="lastData" position-right [type]="'menucontainer'" [icon]="'fa fa-user fa-fw'"
         [title]="title" [type]="'button'">
         
-        <div style="color: black; width: 150px;padding: 5px;" *ngFor="let item of usermenu" class="advance-menu"
+        <div *ngFor="let item of usermenu" class="advance-menu"
             [ngClass]="{'advance-menu-seperator': item.seperator}">
             <i [class]="item.icon"></i>
             &nbsp;
@@ -17,12 +18,24 @@
             </amexio-label>
         </div>
     </amexio-nav-item>
-
      
     <amexio-nav-item position-left *ngFor="let items of menus" [type]="'menu'"
         [title]="items.text" [data]="items.submenus" (onNavItemClick)="externalLink($event)">
     </amexio-nav-item>
-</amexio-nav>
-<div style="padding: 55px 1% 0px 1%;">
+  </amexio-nav>
+  </amexio-homepage-northpanel>
+  <amexio-homepage-westpanel>
+        <amexio-side-nav [http-url]="'/assets/data/sidenav.json'"
+        [http-method]="'get'" [data-reader]="'data'"
+        [width]="'275px'" [position]="'relative'">
+    </amexio-side-nav> 
+  </amexio-homepage-westpanel>
+  <amexio-homepage-centerpanel>
+        <app-activity-panel>
+          
+        </app-activity-panel>
+    </amexio-homepage-centerpanel>
+</amexio-homepage-ce>
+<!-- <div class="top-nav-padding">
     <router-outlet></router-outlet>
-</div>
+</div> -->

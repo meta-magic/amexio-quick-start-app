@@ -11,7 +11,6 @@ import { LoginComponent } from './component/login/login.component';
 import { HomeComponent } from './component/home/home.component';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClientModule } from '@angular/common/http';
-import { MainComponent } from './component/main/main.component';
 import { RouteGuardService } from './services/route.guard.service';
 import { ActivityPanelComponent } from './component/activity-panel/activity-panel.component';
 
@@ -20,7 +19,6 @@ import { ActivityPanelComponent } from './component/activity-panel/activity-pane
     AppComponent,
     LoginComponent,
     HomeComponent,
-    MainComponent,
     ActivityPanelComponent
   ],
   imports: [

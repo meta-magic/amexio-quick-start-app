@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
 
   loginHandle() {
     this.cookieService.set('tokenId', new Date().getTime() + '');
-    this.route.navigate(['home/main']);
+    this.route.navigate(['home']);
   }
 
 }
