@@ -17,8 +17,7 @@
                 [data]="localData"
                 [filter]="true" 
                 [data-reader]="'response.data'" 
-                [display-field]="'name_official'" 
-                (selectedRows)="getSelectedData($event)">
+                [display-field]="'name_official'" >
                 </amexio-listbox>
             </amexio-body>            
     </amexio-card>
@@ -61,14 +60,7 @@
                                 </amexio-column>
                             </amexio-row>
                         
-                            <amexio-row>
-                                <amexio-column size="6">
-                                    <amexio-radio-group formControlName="Gender" [field-label]="'Gender'" [horizontal]="true" [display-field]="'genderName'" [value-field]="'genderId'" [data]="radioGroupData">
-                                    </amexio-radio-group>
-                                </amexio-column>
-                                <amexio-column size="6">
-                                </amexio-column>
-                            </amexio-row>
+
                         </form>
                         
                     </amexio-body>

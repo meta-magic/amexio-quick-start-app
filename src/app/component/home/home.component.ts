@@ -83,4 +83,8 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+
+  externalLink(event){
+    
+  }
 }
