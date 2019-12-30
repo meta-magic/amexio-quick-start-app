@@ -1,0 +1,10 @@
+[{
+    "name": "My Profile",
+    "icon": "fa fa-user",
+    "link": ""
+  },
+  {
+    "name": "Logout",
+    "icon": "fa fa-sign-out",
+    "link": "login"
+  }]

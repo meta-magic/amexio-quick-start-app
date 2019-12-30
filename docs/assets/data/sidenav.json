@@ -1,0 +1,75 @@
+{
+    "data":[
+      {
+        "text": "Home",
+        "icon" : "fa fa-home fa-fw",
+        "mdaIcon" : "home",
+        "link" : "/home/activity",
+        "selected":true,
+        "badge": "12"
+      },
+      {
+        "text": "Address",
+        "icon" : "fa fa-envelope fa-fw",
+        "mdaIcon" : "address",
+        "link" : "/home/activity",
+        "badge": "21"
+      },
+      {
+        "text": "Profile",
+        "icon" : "fa fa-user fa-fw",
+        "mdaIcon" : "account_box",
+        "link" : "/home/activity",
+        "badge": "32"
+      },
+      {
+        "text": "Employee Info",
+        "icon" : "fa fa-id-card-o fa-fw",
+        "mdaIcon" : "pages",
+        "expand":false,
+        "badge": "45",
+        "children": [
+            {
+                "text": "Employee",
+                "icon" : "fa fa-address-book-o fa-fw",
+                "mdaIcon":"perm_contact_calendar",
+                "link" : "/home/activity"
+            },
+            { 
+            "text": "Department",
+            "icon" : "fa fa-laptop fa-fw",
+            "mdaIcon" : "create",
+            "link":"/home/sample",
+            "badge": "46"
+          },
+          {
+            "text": "Timesheet",
+            "mdaIcon":"open_in_browser",
+            "icon" : "fa fa-sign-in fa-fw",
+            "link" : "/home/activity",
+            "badge": "47"
+          },
+
+          {
+            "text": "Salary Slips",
+            "icon" : "fa fa-exclamation fa-fw",
+            "mdaIcon":"playlist_add_check",
+            "link" : "/home/activity"
+          }
+        ]
+      },
+      {
+        "text": "Reports",
+        "icon" : "fa fa-picture-o fa-fw",
+        "mdaIcon":"assignment",
+        "expand":false,
+        "children": [
+          {
+            "text": "Appraisals",
+            "icon" : "fa fa-ticket fa-fw",
+            "mdaIcon":"bug_report",
+            "link" : "/home/activity"
+          }
+        ]
+      }
+    ]}
