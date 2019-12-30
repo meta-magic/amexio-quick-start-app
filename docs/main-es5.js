@@ -1659,7 +1659,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /home/anagha-k-g/DEV/demo/amexio-quick-start-app/src/main.ts */
+    /*! /home/travis/build/meta-magic/amexio-quick-start-app/src/main.ts */
     "./src/main.ts");
     /***/
   }
