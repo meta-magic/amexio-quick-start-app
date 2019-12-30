@@ -1,14 +1,14 @@
-<div class="login-page-div">
+
     <amexio-nav  amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [transparent]="true" 
       [enable-side-nav-position]="true" [title]="'Amexio Quick Start App'" 
-      class="custom-nav" [logo]="'assets/images/amexio-logo.png'">
+      [logo]="'assets/images/amexio-logo.png'">
     </amexio-nav>
     <amexio-layout-columns [orientation]="'vertical'" [border]="false" [alignment]="'center'">
         <amexio-layout-item>
             <amexio-layout-columns [fit]="true" [orientation]="'horizontal'" [border]="false" [alignment]="'end'">
                 <amexio-layout-item> &nbsp; </amexio-layout-item>
-                <amexio-layout-item class="login-page">
-                    <amexio-card-ce class="custom-card" amexioThemeStyle [theme-style]="'round-edge'">
+                <amexio-layout-item>
+                    <amexio-card-ce amexioThemeStyle [theme-style]="'round-edge'">
 
                         <amexio-header-ce [border-bottom]="true">
                             <amexio-label>
@@ -55,7 +55,6 @@
 
         </amexio-layout-item>
     </amexio-layout-columns>
-</div>
 
 <amexio-spinner [show]="showLoader" [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
     [color]="'blue'">
