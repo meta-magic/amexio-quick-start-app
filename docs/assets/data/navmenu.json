@@ -1,0 +1,49 @@
+  [{
+    "text": "File",
+    "submenus": [{
+      "text": "New",
+      "link": "new",
+      "submenus":[{
+        "text": "Project",
+        "link": "project"
+      },
+      {
+        "text": "Recent Projects",
+        "link": "recent"
+                }]
+    },
+    {
+     "text": "Open",
+     "link": "open"
+    },
+    {
+      "text": "Save",
+      "link": "save"
+    }
+  ]},
+   {
+     "text": "Edit",
+     "link": "edit",
+     "submenus": [
+       {
+         "text": "Undo",
+         "link": "undo"
+       },
+       {
+         "text": "Delete",
+         "link": "delete"
+       }
+     ]
+   },
+   {
+     "text": "Help",
+     "link": "help",
+     "submenus":[
+       {
+         "text": "About Us",
+         "link": "contents"
+       }
+     ]
+
+   }
+]
