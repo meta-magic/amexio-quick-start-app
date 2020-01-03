@@ -27,13 +27,15 @@
   <amexio-homepage-westpanel>
         <amexio-side-nav [http-url]="'assets/data/sidenav.json'"
         [http-method]="'get'" [data-reader]="'data'"
-        [width]="'275px'" [position]="'relative'">
+        [width]="'275px'" [position]="'relative'" 
+        (nodeClick)="getNodeData($event)">
     </amexio-side-nav> 
   </amexio-homepage-westpanel>
   <amexio-homepage-centerpanel>
-        <app-activity-panel>
+        <!-- <app-activity-panel>
           
-        </app-activity-panel>
+        </app-activity-panel> -->
+        <router-outlet></router-outlet>
     </amexio-homepage-centerpanel>
 </amexio-homepage-ce>
 <!-- <div class="top-nav-padding">

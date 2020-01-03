@@ -3,16 +3,14 @@
                     size="3"
                     fit="false">
     <amexio-card
-        [header]="true"
+        [header]="false"
         [header-align]="'left'"
         [footer]="false">           
-    <amexio-header>
-                Activity List
-    </amexio-header>
+
             <amexio-body>
                 <amexio-listbox
                 [height]="425" 
-                [header]="'Contacts'" 
+                [header]="'Employee List'" 
                 [search-placeholder]="'Search Contacts'" 
                 [data]="localData"
                 [filter]="true" 
@@ -31,10 +29,10 @@
                 [footer]="true"
                 [footer-align]="'right'">
                     <amexio-header>
-                        Activity Details
+                        Employee Details
                     </amexio-header>
                     <amexio-body>
-                        <form [formGroup]="activityForm">
+                        <form [formGroup]="employeeForm">
                             <amexio-row>
                                 <amexio-column size="6">
                                     <amexio-text-input formControlName="FirstName" [field-label]="'First Name'" [allow-blank]="true" [error-msg]="'Please enter valid First Name'" [enable-popover]="true" [place-holder]="'Please enter first name'" [min-length]="2"  [icon-feedback]="false"
@@ -43,7 +41,7 @@
                                 </amexio-column>
                                 <amexio-column size="6">
                                     <amexio-text-input formControlName="LastName" [field-label]="'Last Name'" [place-holder]="'Please enter last name'" [allow-blank]="true" [error-msg]="'errorMsg'" [enable-popover]="true" [min-length]="2" [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'"
-                                        [max-length]="20"
+                                        [max-length]="20">
                                         [icon-feedback]="true" >
                                     </amexio-text-input>
                                 </amexio-column>
@@ -65,9 +63,9 @@
                         
                     </amexio-body>
                     <amexio-action>
-                        <amexio-button [label]="'Save'" [disabled]="!activityForm.valid" [type]="'green'" [tooltip]="'Save Form'">
+                        <amexio-button [label]="'Save'" [disabled]="!employeeForm.valid" [type]="'green'" [tooltip]="'Save Form'">
                         </amexio-button>
-        
+                        
                     </amexio-action>
             </amexio-card>
     </amexio-column>

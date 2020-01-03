@@ -1,0 +1,64 @@
+<amexio-row>
+    <amexio-column
+                    size="3"
+                    fit="false">
+    <amexio-card
+        [header]="false"
+        [header-align]="'left'"
+        [footer]="false">           
+
+            <amexio-body>
+                <amexio-listbox
+                [height]="425" 
+                [header]="'Department List'" 
+                [search-placeholder]="'Search Department'" 
+                [data]="localData"
+                [filter]="true" 
+                [data-reader]="'response.data'" 
+                [display-field]="'name_official'" >
+                </amexio-listbox>
+            </amexio-body>            
+    </amexio-card>
+    </amexio-column>
+    <amexio-column
+                    size="9"
+                    fit="false">
+            <amexio-card
+                [header]="true"
+                [header-align]="'left'"
+                [footer]="true"
+                [footer-align]="'right'">
+                    <amexio-header>
+                        Department Details
+                    </amexio-header>
+                    <amexio-body>
+                        <form [formGroup]="deptForm">
+                            <amexio-row>
+                                <amexio-column size="6">
+                                    <amexio-text-input formControlName="deptName" [field-label]="'Department Name'" [allow-blank]="true" 
+                                      [error-msg]="'Please enter valid Department Name'" [enable-popover]="true" [place-holder]="'Please enter dept name'" [min-length]="2"  [icon-feedback]="false"
+                                      [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'" [max-length]="20">
+                                    </amexio-text-input>
+                                </amexio-column>
+                                <amexio-column size="6">
+                                    <amexio-text-input formControlName="mgrName" [field-label]="'Manager Name'" [place-holder]="'Please enter manager name'" 
+                                      [allow-blank]="true" [error-msg]="'errorMsg'" [enable-popover]="true" [min-length]="2" [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'"
+                                      [max-length]="20"
+                                      [icon-feedback]="true" >
+                                    </amexio-text-input>
+                                </amexio-column>
+                            </amexio-row>
+                           
+                        
+
+                        </form>
+                        
+                    </amexio-body>
+                    <amexio-action>
+                        <amexio-button [label]="'Save'" [disabled]="!deptForm.valid" [type]="'green'" [tooltip]="'Save Form'">
+                        </amexio-button>
+                        
+                    </amexio-action>
+            </amexio-card>
+    </amexio-column>
+</amexio-row>

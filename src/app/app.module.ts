@@ -13,13 +13,17 @@ import { CookieService } from 'ngx-cookie-service';
 import { HttpClientModule } from '@angular/common/http';
 import { RouteGuardService } from './services/route.guard.service';
 import { ActivityPanelComponent } from './component/activity-panel/activity-panel.component';
+import { EmployeeInfoComponent } from './component/employee-info/employee-info.component';
+import { DepartmentInfoComponent } from './component/department-info/department-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    ActivityPanelComponent
+    ActivityPanelComponent,
+    EmployeeInfoComponent,
+    DepartmentInfoComponent
   ],
   imports: [
     BrowserModule,

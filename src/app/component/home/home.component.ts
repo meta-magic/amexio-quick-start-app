@@ -87,4 +87,13 @@ export class HomeComponent implements OnInit {
   externalLink(event){
     
   }
+  getNodeData(data: any) {
+  console.log(data.link);
+  if (data.hasOwnProperty('link')) {
+    this._route.navigate([data.link]);
+  } else {
+    
+  }
+  }
+  
 }

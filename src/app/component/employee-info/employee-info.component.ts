@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-activity-panel',
-  templateUrl: './activity-panel.component.html',
-  styleUrls: ['./activity-panel.component.scss']
+  selector: 'app-employee-info',
+  templateUrl: './employee-info.component.html',
+  styleUrls: ['./employee-info.component.scss']
 })
-export class ActivityPanelComponent implements OnInit {
+export class EmployeeInfoComponent implements OnInit {
+
   localData: any;
-  activityForm: FormGroup;
+  employeeForm: FormGroup;
   constructor(private fb: FormBuilder) { 
 
     this.localData = {
@@ -37,12 +38,11 @@ export class ActivityPanelComponent implements OnInit {
         ]
       }
     };  
-    this.activityForm = this.fb.group({
+    this.employeeForm = this.fb.group({
       FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
       LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
       Email: ['', [Validators.required, Validators.email]],
       Age: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
-      Gender: ['', [Validators.required]]
     });
   }
 
