@@ -13,12 +13,12 @@ export class HomeComponent implements OnInit {
   menus: any[] = [];
   subnavmenus: any[] = [];
   title: string;
-  @ViewChild('nav', {static: true}) tab: ElementRef;
+  @ViewChild('nav', { static: true }) tab: ElementRef;
   usermenu: any;
 
   constructor(private _route: Router,
-              private hService: HttpService,
-              private cookieService: CookieService) {
+    private hService: HttpService,
+    private cookieService: CookieService) {
     this.getMenuList();
 
     this.subnavmenus =
@@ -84,16 +84,24 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  externalLink(event){
-    
+  externalLink(event) {
   }
+
+  externalLinkClick(event) {
+    console.log(event);
+    if (event.data.text == 'Logout') {
+      this._route.navigate(['login']);
+      this.cookieService.delete('tokenId');
+    }
+  }
+
   getNodeData(data: any) {
-  console.log(data.link);
-  if (data.hasOwnProperty('link')) {
-    this._route.navigate([data.link]);
-  } else {
-    
+    console.log(data.link);
+    if (data.hasOwnProperty('link')) {
+      this._route.navigate([data.link]);
+    } else {
+
+    }
   }
-  }
-  
+
 }
