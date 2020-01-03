@@ -71,7 +71,47 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<amexio-row>\n    <amexio-column\n                    size=\"3\"\n                    fit=\"false\">\n    <amexio-card\n        [header]=\"true\"\n        [header-align]=\"'left'\"\n        [footer]=\"false\">           \n    <amexio-header>\n                Employee List\n    </amexio-header>\n            <amexio-body>\n                <amexio-listbox\n                [height]=\"425\" \n                [header]=\"'Contacts'\" \n                [search-placeholder]=\"'Search Contacts'\" \n                [data]=\"localData\"\n                [filter]=\"true\" \n                [data-reader]=\"'response.data'\" \n                [display-field]=\"'name_official'\" >\n                </amexio-listbox>\n            </amexio-body>            \n    </amexio-card>\n    </amexio-column>\n    <amexio-column\n                    size=\"9\"\n                    fit=\"false\">\n            <amexio-card\n                [header]=\"true\"\n                [header-align]=\"'left'\"\n                [footer]=\"true\"\n                [footer-align]=\"'right'\">\n                    <amexio-header>\n                        Employee Details\n                    </amexio-header>\n                    <amexio-body>\n                        <form [formGroup]=\"employeeForm\">\n                            <amexio-row>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"FirstName\" [field-label]=\"'First Name'\" [allow-blank]=\"true\" [error-msg]=\"'Please enter valid First Name'\" [enable-popover]=\"true\" [place-holder]=\"'Please enter first name'\" [min-length]=\"2\"  [icon-feedback]=\"false\"\n                                        [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\" [max-length]=\"20\">\n                                    </amexio-text-input>\n                                </amexio-column>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"LastName\" [field-label]=\"'Last Name'\" [place-holder]=\"'Please enter last name'\" [allow-blank]=\"true\" [error-msg]=\"'errorMsg'\" [enable-popover]=\"true\" [min-length]=\"2\" [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\"\n                                        [max-length]=\"20\">\n                                        [icon-feedback]=\"true\" >\n                                    </amexio-text-input>\n                                </amexio-column>\n                            </amexio-row>\n                            <amexio-row>\n                                <amexio-column size=\"6\">\n                                    <amexio-email-input formControlName=\"Email\" [field-label]=\"'Email Id'\" [place-holder]=\"'Please enter Email Id'\" [allow-blank]=\"false\" [error-msg]=\"'Please Enter Email Id'\" [enable-popover]=\"true\" [icon-feedback]=\"true\">\n                                    </amexio-email-input>\n                                </amexio-column>\n                                <amexio-column size=\"6\">\n                                    <amexio-number-input formControlName=\"Age\" [enable-popover]=\"true\" [field-label]=\"'Age'\" [place-holder]=\"'Enter age'\" [error-msg]=\"'Please enter age'\" [min-value]=\"18\" [min-error-msg]=\"'age can not be less than 18'\" [max-value]=\"100\" [max-error-msg]=\"'age can not be greater than 100'\"\n                                        [icon-feedback]=\"true\">\n                                    </amexio-number-input>\n                                </amexio-column>\n                            </amexio-row>\n                        \n\n                        </form>\n                        \n                    </amexio-body>\n                    <amexio-action>\n                        <amexio-button [label]=\"'Save'\" [disabled]=\"!employeeForm.valid\" [type]=\"'green'\" [tooltip]=\"'Save Form'\">\n                        </amexio-button>\n                        \n                    </amexio-action>\n            </amexio-card>\n    </amexio-column>\n</amexio-row>";
+    __webpack_exports__["default"] = "<amexio-row>\n    <amexio-column\n                    size=\"3\"\n                    fit=\"false\">\n    <amexio-card\n        [header]=\"true\"\n        [header-align]=\"'left'\"\n        [footer]=\"false\">           \n    <amexio-header>\n                Activity List\n    </amexio-header>\n            <amexio-body>\n                <amexio-listbox\n                [height]=\"425\" \n                [header]=\"'Contacts'\" \n                [search-placeholder]=\"'Search Contacts'\" \n                [data]=\"localData\"\n                [filter]=\"true\" \n                [data-reader]=\"'response.data'\" \n                [display-field]=\"'name_official'\" >\n                </amexio-listbox>\n            </amexio-body>            \n    </amexio-card>\n    </amexio-column>\n    <amexio-column\n                    size=\"9\"\n                    fit=\"false\">\n            <amexio-card\n                [header]=\"true\"\n                [header-align]=\"'left'\"\n                [footer]=\"true\"\n                [footer-align]=\"'right'\">\n                    <amexio-header>\n                        Activity Details\n                    </amexio-header>\n                    <amexio-body>\n                        <form [formGroup]=\"activityForm\">\n                            <amexio-row>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"FirstName\" [field-label]=\"'First Name'\" [allow-blank]=\"true\" [error-msg]=\"'Please enter valid First Name'\" [enable-popover]=\"true\" [place-holder]=\"'Please enter first name'\" [min-length]=\"2\"  [icon-feedback]=\"false\"\n                                        [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\" [max-length]=\"20\">\n                                    </amexio-text-input>\n                                </amexio-column>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"LastName\" [field-label]=\"'Last Name'\" [place-holder]=\"'Please enter last name'\" [allow-blank]=\"true\" [error-msg]=\"'errorMsg'\" [enable-popover]=\"true\" [min-length]=\"2\" [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\"\n                                        [max-length]=\"20\"\n                                        [icon-feedback]=\"true\" >\n                                    </amexio-text-input>\n                                </amexio-column>\n                            </amexio-row>\n                            <amexio-row>\n                                <amexio-column size=\"6\">\n                                    <amexio-email-input formControlName=\"Email\" [field-label]=\"'Email Id'\" [place-holder]=\"'Please enter Email Id'\" [allow-blank]=\"false\" [error-msg]=\"'Please Enter Email Id'\" [enable-popover]=\"true\" [icon-feedback]=\"true\">\n                                    </amexio-email-input>\n                                </amexio-column>\n                                <amexio-column size=\"6\">\n                                    <amexio-number-input formControlName=\"Age\" [enable-popover]=\"true\" [field-label]=\"'Age'\" [place-holder]=\"'Enter age'\" [error-msg]=\"'Please enter age'\" [min-value]=\"18\" [min-error-msg]=\"'age can not be less than 18'\" [max-value]=\"100\" [max-error-msg]=\"'age can not be greater than 100'\"\n                                        [icon-feedback]=\"true\">\n                                    </amexio-number-input>\n                                </amexio-column>\n                            </amexio-row>\n                        \n\n                        </form>\n                        \n                    </amexio-body>\n                    <amexio-action>\n                        <amexio-button [label]=\"'Save'\" [disabled]=\"!activityForm.valid\" [type]=\"'green'\" [tooltip]=\"'Save Form'\">\n                        </amexio-button>\n        \n                    </amexio-action>\n            </amexio-card>\n    </amexio-column>\n</amexio-row>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/component/department-info/department-info.component.html":
+  /*!****************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/component/department-info/department-info.component.html ***!
+    \****************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentDepartmentInfoDepartmentInfoComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<amexio-row>\n    <amexio-column\n                    size=\"3\"\n                    fit=\"false\">\n    <amexio-card\n        [header]=\"false\"\n        [header-align]=\"'left'\"\n        [footer]=\"false\">           \n\n            <amexio-body>\n                <amexio-listbox\n                [height]=\"425\" \n                [header]=\"'Department List'\" \n                [search-placeholder]=\"'Search Department'\" \n                [data]=\"localData\"\n                [filter]=\"true\" \n                [data-reader]=\"'response.data'\" \n                [display-field]=\"'name_official'\" >\n                </amexio-listbox>\n            </amexio-body>            \n    </amexio-card>\n    </amexio-column>\n    <amexio-column\n                    size=\"9\"\n                    fit=\"false\">\n            <amexio-card\n                [header]=\"true\"\n                [header-align]=\"'left'\"\n                [footer]=\"true\"\n                [footer-align]=\"'right'\">\n                    <amexio-header>\n                        Department Details\n                    </amexio-header>\n                    <amexio-body>\n                        <form [formGroup]=\"deptForm\">\n                            <amexio-row>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"deptName\" [field-label]=\"'Department Name'\" [allow-blank]=\"true\" \n                                      [error-msg]=\"'Please enter valid Department Name'\" [enable-popover]=\"true\" [place-holder]=\"'Please enter dept name'\" [min-length]=\"2\"  [icon-feedback]=\"false\"\n                                      [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\" [max-length]=\"20\">\n                                    </amexio-text-input>\n                                </amexio-column>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"mgrName\" [field-label]=\"'Manager Name'\" [place-holder]=\"'Please enter manager name'\" \n                                      [allow-blank]=\"true\" [error-msg]=\"'errorMsg'\" [enable-popover]=\"true\" [min-length]=\"2\" [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\"\n                                      [max-length]=\"20\"\n                                      [icon-feedback]=\"true\" >\n                                    </amexio-text-input>\n                                </amexio-column>\n                            </amexio-row>\n                           \n                        \n\n                        </form>\n                        \n                    </amexio-body>\n                    <amexio-action>\n                        <amexio-button [label]=\"'Save'\" [disabled]=\"!deptForm.valid\" [type]=\"'green'\" [tooltip]=\"'Save Form'\">\n                        </amexio-button>\n                        \n                    </amexio-action>\n            </amexio-card>\n    </amexio-column>\n</amexio-row>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/component/employee-info/employee-info.component.html":
+  /*!************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/component/employee-info/employee-info.component.html ***!
+    \************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppComponentEmployeeInfoEmployeeInfoComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<amexio-row>\n    <amexio-column\n                    size=\"3\"\n                    fit=\"false\">\n    <amexio-card\n        [header]=\"false\"\n        [header-align]=\"'left'\"\n        [footer]=\"false\">           \n\n            <amexio-body>\n                <amexio-listbox\n                [height]=\"425\" \n                [header]=\"'Employee List'\" \n                [search-placeholder]=\"'Search Contacts'\" \n                [data]=\"localData\"\n                [filter]=\"true\" \n                [data-reader]=\"'response.data'\" \n                [display-field]=\"'name_official'\" >\n                </amexio-listbox>\n            </amexio-body>            \n    </amexio-card>\n    </amexio-column>\n    <amexio-column\n                    size=\"9\"\n                    fit=\"false\">\n            <amexio-card\n                [header]=\"true\"\n                [header-align]=\"'left'\"\n                [footer]=\"true\"\n                [footer-align]=\"'right'\">\n                    <amexio-header>\n                        Employee Details\n                    </amexio-header>\n                    <amexio-body>\n                        <form [formGroup]=\"employeeForm\">\n                            <amexio-row>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"FirstName\" [field-label]=\"'First Name'\" [allow-blank]=\"true\" [error-msg]=\"'Please enter valid First Name'\" [enable-popover]=\"true\" [place-holder]=\"'Please enter first name'\" [min-length]=\"2\"  [icon-feedback]=\"false\"\n                                        [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\" [max-length]=\"20\">\n                                    </amexio-text-input>\n                                </amexio-column>\n                                <amexio-column size=\"6\">\n                                    <amexio-text-input formControlName=\"LastName\" [field-label]=\"'Last Name'\" [place-holder]=\"'Please enter last name'\" [allow-blank]=\"true\" [error-msg]=\"'errorMsg'\" [enable-popover]=\"true\" [min-length]=\"2\" [min-error-msg]=\"'Minimum 2 char allowed'\" [max-error-msg]=\"'Maximum 20 char allowed'\"\n                                        [max-length]=\"20\">\n                                        [icon-feedback]=\"true\" >\n                                    </amexio-text-input>\n                                </amexio-column>\n                            </amexio-row>\n                            <amexio-row>\n                                <amexio-column size=\"6\">\n                                    <amexio-email-input formControlName=\"Email\" [field-label]=\"'Email Id'\" [place-holder]=\"'Please enter Email Id'\" [allow-blank]=\"false\" [error-msg]=\"'Please Enter Email Id'\" [enable-popover]=\"true\" [icon-feedback]=\"true\">\n                                    </amexio-email-input>\n                                </amexio-column>\n                                <amexio-column size=\"6\">\n                                    <amexio-number-input formControlName=\"Age\" [enable-popover]=\"true\" [field-label]=\"'Age'\" [place-holder]=\"'Enter age'\" [error-msg]=\"'Please enter age'\" [min-value]=\"18\" [min-error-msg]=\"'age can not be less than 18'\" [max-value]=\"100\" [max-error-msg]=\"'age can not be greater than 100'\"\n                                        [icon-feedback]=\"true\">\n                                    </amexio-number-input>\n                                </amexio-column>\n                            </amexio-row>\n                        \n\n                        </form>\n                        \n                    </amexio-body>\n                    <amexio-action>\n                        <amexio-button [label]=\"'Save'\" [disabled]=\"!employeeForm.valid\" [type]=\"'green'\" [tooltip]=\"'Save Form'\">\n                        </amexio-button>\n                        \n                    </amexio-action>\n            </amexio-card>\n    </amexio-column>\n</amexio-row>";
     /***/
   },
 
@@ -91,7 +131,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<amexio-homepage-ce [type]=\"'1'\">\n  <amexio-homepage-northpanel>\n    <amexio-nav amexioColorPalette [color-palette]=\"'vibrant'\" [gradient]=\"true\" [transparent]=\"true\" [title]=\"'Amexio Quick Start App'\" \n        class=\"custom-nav\" [enable-side-nav-position]=\"true\" [logo]=\"'assets/images/amexio-logo.png'\">\n  \n    <amexio-nav-item position-right [icon]=\"'fa fa-bell'\" [type]=\"'button'\">\n    </amexio-nav-item> \n    \n    <amexio-nav-item #nav class=\"lastData\" position-right [type]=\"'menucontainer'\" [icon]=\"'fa fa-user fa-fw'\"\n        [title]=\"title\" [type]=\"'button'\">\n        \n        <div *ngFor=\"let item of usermenu\" class=\"advance-menu\"\n            [ngClass]=\"{'advance-menu-seperator': item.seperator}\">\n            <i [class]=\"item.icon\"></i>\n            &nbsp;\n            <amexio-label style=\"cursor: pointer\" (click)=\"userAction(item)\" size=\"'small'\" [enable-click]=\"true\">\n                {{item.name}}\n            </amexio-label>\n        </div>\n    </amexio-nav-item>\n     \n    <amexio-nav-item position-left *ngFor=\"let items of menus\" [type]=\"'menu'\"\n        [title]=\"items.text\" [data]=\"items.submenus\" (onNavItemClick)=\"externalLink($event)\">\n    </amexio-nav-item>\n  </amexio-nav>\n  </amexio-homepage-northpanel>\n  <amexio-homepage-westpanel>\n        <amexio-side-nav [http-url]=\"'assets/data/sidenav.json'\"\n        [http-method]=\"'get'\" [data-reader]=\"'data'\"\n        [width]=\"'275px'\" [position]=\"'relative'\">\n    </amexio-side-nav> \n  </amexio-homepage-westpanel>\n  <amexio-homepage-centerpanel>\n        <app-activity-panel>\n          \n        </app-activity-panel>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>\n<!-- <div class=\"top-nav-padding\">\n    <router-outlet></router-outlet>\n</div> -->\n";
+    __webpack_exports__["default"] = "<amexio-homepage-ce [type]=\"'1'\">\n  <amexio-homepage-northpanel>\n    <amexio-nav amexioColorPalette [color-palette]=\"'vibrant'\" [gradient]=\"true\" [transparent]=\"true\" [title]=\"'Amexio Quick Start App'\" \n        class=\"custom-nav\" [enable-side-nav-position]=\"true\" [logo]=\"'assets/images/amexio-logo.png'\">\n  \n    <amexio-nav-item position-right [icon]=\"'fa fa-bell'\" [type]=\"'button'\">\n    </amexio-nav-item> \n    \n    <amexio-nav-item #nav class=\"lastData\" position-right [type]=\"'menucontainer'\" [icon]=\"'fa fa-user fa-fw'\"\n        [title]=\"title\" [type]=\"'button'\">\n        \n        <div *ngFor=\"let item of usermenu\" class=\"advance-menu\"\n            [ngClass]=\"{'advance-menu-seperator': item.seperator}\">\n            <i [class]=\"item.icon\"></i>\n            &nbsp;\n            <amexio-label style=\"cursor: pointer\" (click)=\"userAction(item)\" size=\"'small'\" [enable-click]=\"true\">\n                {{item.name}}\n            </amexio-label>\n        </div>\n    </amexio-nav-item>\n     \n    <amexio-nav-item position-left *ngFor=\"let items of menus\" [type]=\"'menu'\"\n        [title]=\"items.text\" [data]=\"items.submenus\" (onNavItemClick)=\"externalLink($event)\">\n    </amexio-nav-item>\n  </amexio-nav>\n  </amexio-homepage-northpanel>\n  <amexio-homepage-westpanel>\n        <amexio-side-nav [http-url]=\"'assets/data/sidenav.json'\"\n        [http-method]=\"'get'\" [data-reader]=\"'data'\"\n        [width]=\"'275px'\" [position]=\"'relative'\" \n        (nodeClick)=\"getNodeData($event)\">\n    </amexio-side-nav> \n  </amexio-homepage-westpanel>\n  <amexio-homepage-centerpanel>\n        <!-- <app-activity-panel>\n          \n        </app-activity-panel> -->\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>\n<!-- <div class=\"top-nav-padding\">\n    <router-outlet></router-outlet>\n</div> -->\n";
     /***/
   },
 
@@ -701,33 +741,51 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _component_activity_panel_activity_panel_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./component/activity-panel/activity-panel.component */
+    "./src/app/component/activity-panel/activity-panel.component.ts");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
-    var _component_home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _component_home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./component/home/home.component */
     "./src/app/component/home/home.component.ts");
     /* harmony import */
 
 
-    var _component_login_login_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _component_login_login_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./component/login/login.component */
     "./src/app/component/login/login.component.ts");
     /* harmony import */
 
 
-    var _services_route_guard_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _services_route_guard_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./services/route.guard.service */
     "./src/app/services/route.guard.service.ts");
+    /* harmony import */
+
+
+    var _component_employee_info_employee_info_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./component/employee-info/employee-info.component */
+    "./src/app/component/employee-info/employee-info.component.ts");
+    /* harmony import */
+
+
+    var _component_department_info_department_info_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./component/department-info/department-info.component */
+    "./src/app/component/department-info/department-info.component.ts");
 
     var routes = [{
       path: '',
@@ -735,22 +793,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       pathMatch: 'full'
     }, {
       path: 'login',
-      component: _component_login_login_component__WEBPACK_IMPORTED_MODULE_4__["LoginComponent"]
+      component: _component_login_login_component__WEBPACK_IMPORTED_MODULE_5__["LoginComponent"]
     }, {
       path: 'home',
-      canActivate: [_services_route_guard_service__WEBPACK_IMPORTED_MODULE_5__["RouteGuardService"]],
-      component: _component_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
+      canActivate: [_services_route_guard_service__WEBPACK_IMPORTED_MODULE_6__["RouteGuardService"]],
+      component: _component_home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"],
+      children: [{
+        path: 'activity',
+        canLoad: [_services_route_guard_service__WEBPACK_IMPORTED_MODULE_6__["RouteGuardService"]],
+        component: _component_activity_panel_activity_panel_component__WEBPACK_IMPORTED_MODULE_1__["ActivityPanelComponent"]
+      }, {
+        path: 'emp',
+        canLoad: [_services_route_guard_service__WEBPACK_IMPORTED_MODULE_6__["RouteGuardService"]],
+        component: _component_employee_info_employee_info_component__WEBPACK_IMPORTED_MODULE_7__["EmployeeInfoComponent"]
+      }, {
+        path: 'dept',
+        canLoad: [_services_route_guard_service__WEBPACK_IMPORTED_MODULE_6__["RouteGuardService"]],
+        component: _component_department_info_department_info_component__WEBPACK_IMPORTED_MODULE_8__["DepartmentInfoComponent"]
+      }]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
       _classCallCheck(this, AppRoutingModule);
     };
 
-    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes, {
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes, {
         useHash: true
       })],
-      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]]
     })], AppRoutingModule);
     /***/
   },
@@ -934,13 +1005,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _component_activity_panel_activity_panel_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ./component/activity-panel/activity-panel.component */
     "./src/app/component/activity-panel/activity-panel.component.ts");
+    /* harmony import */
+
+
+    var _component_employee_info_employee_info_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    /*! ./component/employee-info/employee-info.component */
+    "./src/app/component/employee-info/employee-info.component.ts");
+    /* harmony import */
+
+
+    var _component_department_info_department_info_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! ./component/department-info/department-info.component */
+    "./src/app/component/department-info/department-info.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _component_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"], _component_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"], _component_activity_panel_activity_panel_component__WEBPACK_IMPORTED_MODULE_14__["ActivityPanelComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _component_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"], _component_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"], _component_activity_panel_activity_panel_component__WEBPACK_IMPORTED_MODULE_14__["ActivityPanelComponent"], _component_employee_info_employee_info_component__WEBPACK_IMPORTED_MODULE_15__["EmployeeInfoComponent"], _component_department_info_department_info_component__WEBPACK_IMPORTED_MODULE_16__["DepartmentInfoComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_5__["AmexioEnterpriseModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], amexio_ng_extensions__WEBPACK_IMPORTED_MODULE_5__["AmexioWidgetModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"]],
       providers: [_services_http_service__WEBPACK_IMPORTED_MODULE_1__["HttpService"], ngx_cookie_service__WEBPACK_IMPORTED_MODULE_11__["CookieService"], _services_route_guard_service__WEBPACK_IMPORTED_MODULE_13__["RouteGuardService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
@@ -1032,7 +1115,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             }]
           }
         };
-        this.employeeForm = this.fb.group({
+        this.activityForm = this.fb.group({
           FirstName: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(20)]],
           LastName: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(20)]],
           Email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].email]],
@@ -1064,6 +1147,236 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./activity-panel.component.scss */
       "./src/app/component/activity-panel/activity-panel.component.scss")).default]
     })], ActivityPanelComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/component/department-info/department-info.component.scss":
+  /*!**************************************************************************!*\
+    !*** ./src/app/component/department-info/department-info.component.scss ***!
+    \**************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentDepartmentInfoDepartmentInfoComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9kZXBhcnRtZW50LWluZm8vZGVwYXJ0bWVudC1pbmZvLmNvbXBvbmVudC5zY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/component/department-info/department-info.component.ts":
+  /*!************************************************************************!*\
+    !*** ./src/app/component/department-info/department-info.component.ts ***!
+    \************************************************************************/
+
+  /*! exports provided: DepartmentInfoComponent */
+
+  /***/
+  function srcAppComponentDepartmentInfoDepartmentInfoComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DepartmentInfoComponent", function () {
+      return DepartmentInfoComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+
+    var DepartmentInfoComponent =
+    /*#__PURE__*/
+    function () {
+      function DepartmentInfoComponent(fb) {
+        _classCallCheck(this, DepartmentInfoComponent);
+
+        this.fb = fb;
+        this.localData = {
+          "response": {
+            "success": true,
+            "message": "Fetching  Data  Request Succeeded: Profile",
+            "data": [{
+              "name_official": "CXO"
+            }, {
+              "name_official": "Admin"
+            }, {
+              "name_official": "HR"
+            }, {
+              "name_official": "IT"
+            }]
+          }
+        };
+        this.deptForm = this.fb.group({
+          deptName: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(20)]],
+          mgrName: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(20)]]
+        });
+      }
+
+      _createClass(DepartmentInfoComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return DepartmentInfoComponent;
+    }();
+
+    DepartmentInfoComponent.ctorParameters = function () {
+      return [{
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }];
+    };
+
+    DepartmentInfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-department-info',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./department-info.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/component/department-info/department-info.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./department-info.component.scss */
+      "./src/app/component/department-info/department-info.component.scss")).default]
+    })], DepartmentInfoComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/component/employee-info/employee-info.component.scss":
+  /*!**********************************************************************!*\
+    !*** ./src/app/component/employee-info/employee-info.component.scss ***!
+    \**********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppComponentEmployeeInfoEmployeeInfoComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9lbXBsb3llZS1pbmZvL2VtcGxveWVlLWluZm8uY29tcG9uZW50LnNjc3MifQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/component/employee-info/employee-info.component.ts":
+  /*!********************************************************************!*\
+    !*** ./src/app/component/employee-info/employee-info.component.ts ***!
+    \********************************************************************/
+
+  /*! exports provided: EmployeeInfoComponent */
+
+  /***/
+  function srcAppComponentEmployeeInfoEmployeeInfoComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "EmployeeInfoComponent", function () {
+      return EmployeeInfoComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+
+    var EmployeeInfoComponent =
+    /*#__PURE__*/
+    function () {
+      function EmployeeInfoComponent(fb) {
+        _classCallCheck(this, EmployeeInfoComponent);
+
+        this.fb = fb;
+        this.localData = {
+          "response": {
+            "success": true,
+            "message": "Fetching  Data  Request Succeeded: Profile",
+            "data": [{
+              "name_official": "John Doe"
+            }, {
+              "name_official": "Jack Doe"
+            }, {
+              "name_official": "Jenny Doe"
+            }, {
+              "name_official": "Kenny Doe"
+            }, {
+              "name_official": "Bunny Doe"
+            }, {
+              "name_official": "Jill Doe"
+            }]
+          }
+        };
+        this.employeeForm = this.fb.group({
+          FirstName: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(20)]],
+          LastName: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].minLength(2), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].maxLength(20)]],
+          Email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].email]],
+          Age: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].min(18), _angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].max(100)]]
+        });
+      }
+
+      _createClass(EmployeeInfoComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return EmployeeInfoComponent;
+    }();
+
+    EmployeeInfoComponent.ctorParameters = function () {
+      return [{
+        type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]
+      }];
+    };
+
+    EmployeeInfoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-employee-info',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./employee-info.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/component/employee-info/employee-info.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./employee-info.component.scss */
+      "./src/app/component/employee-info/employee-info.component.scss")).default]
+    })], EmployeeInfoComponent);
     /***/
   },
 
@@ -1202,6 +1515,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "externalLink",
         value: function externalLink(event) {}
+      }, {
+        key: "getNodeData",
+        value: function getNodeData(data) {
+          console.log(data.link);
+
+          if (data.hasOwnProperty('link')) {
+            this._route.navigate([data.link]);
+          } else {}
+        }
       }]);
 
       return HomeComponent;

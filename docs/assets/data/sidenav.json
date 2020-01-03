@@ -33,13 +33,13 @@
                 "text": "Employee",
                 "icon" : "fa fa-address-book-o fa-fw",
                 "mdaIcon":"perm_contact_calendar",
-                "link" : "/home/activity"
+                "link" : "/home/emp"
             },
             { 
             "text": "Department",
             "icon" : "fa fa-laptop fa-fw",
             "mdaIcon" : "create",
-            "link":"/home/sample",
+            "link":"/home/dept",
             "badge": "46"
           },
           {
