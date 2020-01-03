@@ -1,10 +1,17 @@
 [{
-    "name": "My Profile",
-    "icon": "fa fa-user",
-    "link": ""
-  },
-  {
-    "name": "Logout",
-    "icon": "fa fa-sign-out",
-    "link": "login"
-  }]
+  "name": "User Info",
+  "icon": "fa fa-info",
+  "link":"info",
+  "submenus": [
+    {
+      "text": "Profile",
+      "link": "profile",
+      "icon": "fa fa-user"
+    },
+    {
+      "text": "Logout",     
+      "link": "logout",
+      "icon": "fa fa-sign-out"
+    }
+  ]
+}]

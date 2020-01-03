@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<amexio-homepage-ce [type]=\"'1'\">\n  <amexio-homepage-northpanel>\n    <amexio-nav amexioColorPalette [color-palette]=\"'vibrant'\" [gradient]=\"true\" [transparent]=\"true\" [title]=\"'Amexio Quick Start App'\" \n        class=\"custom-nav\" [enable-side-nav-position]=\"true\" [logo]=\"'assets/images/amexio-logo.png'\">\n  \n    <amexio-nav-item position-right [icon]=\"'fa fa-bell'\" [type]=\"'button'\">\n    </amexio-nav-item> \n    \n    <amexio-nav-item #nav class=\"lastData\" position-right [type]=\"'menucontainer'\" [icon]=\"'fa fa-user fa-fw'\"\n        [title]=\"title\" [type]=\"'button'\">\n        \n        <div *ngFor=\"let item of usermenu\" class=\"advance-menu\"\n            [ngClass]=\"{'advance-menu-seperator': item.seperator}\">\n            <i [class]=\"item.icon\"></i>\n            &nbsp;\n            <amexio-label style=\"cursor: pointer\" (click)=\"userAction(item)\" size=\"'small'\" [enable-click]=\"true\">\n                {{item.name}}\n            </amexio-label>\n        </div>\n    </amexio-nav-item>\n     \n    <amexio-nav-item position-left *ngFor=\"let items of menus\" [type]=\"'menu'\"\n        [title]=\"items.text\" [data]=\"items.submenus\" (onNavItemClick)=\"externalLink($event)\">\n    </amexio-nav-item>\n  </amexio-nav>\n  </amexio-homepage-northpanel>\n  <amexio-homepage-westpanel>\n        <amexio-side-nav [http-url]=\"'assets/data/sidenav.json'\"\n        [http-method]=\"'get'\" [data-reader]=\"'data'\"\n        [width]=\"'275px'\" [position]=\"'relative'\" \n        (nodeClick)=\"getNodeData($event)\">\n    </amexio-side-nav> \n  </amexio-homepage-westpanel>\n  <amexio-homepage-centerpanel>\n        <!-- <app-activity-panel>\n          \n        </app-activity-panel> -->\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>\n<!-- <div class=\"top-nav-padding\">\n    <router-outlet></router-outlet>\n</div> -->\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<amexio-homepage-ce [type]=\"'1'\">\n  <amexio-homepage-northpanel>\n    <amexio-nav amexioColorPalette [color-palette]=\"'vibrant'\" [gradient]=\"true\" [transparent]=\"true\" [title]=\"'Amexio Quick Start App'\" \n        class=\"custom-nav\" [enable-side-nav-position]=\"true\" [logo]=\"'assets/images/amexio-logo.png'\">\n  \n    <amexio-nav-item position-right [icon]=\"'fa fa-bell'\" [type]=\"'button'\">\n    </amexio-nav-item> \n    \n    <amexio-nav-item position-right *ngFor=\"let item of usermenu\" [type]=\"'menu'\" [icon]=\"item.icon\"\n        [title]=\"item.name\" [data]=\"item.submenus\" (onNavItemClick)=\"externalLinkClick($event)\">\n    </amexio-nav-item>\n    <amexio-nav-item position-left *ngFor=\"let items of menus\" [type]=\"'menu'\"\n        [title]=\"items.text\" [data]=\"items.submenus\" (onNavItemClick)=\"externalLink($event)\">\n    </amexio-nav-item>\n    \n  </amexio-nav>\n  </amexio-homepage-northpanel>\n  <amexio-homepage-westpanel>\n        <amexio-side-nav [http-url]=\"'assets/data/sidenav.json'\"\n        [http-method]=\"'get'\" [data-reader]=\"'data'\"\n        [width]=\"'275px'\" [position]=\"'relative'\" \n        (nodeClick)=\"getNodeData($event)\">\n    </amexio-side-nav> \n  </amexio-homepage-westpanel>\n  <amexio-homepage-centerpanel>\n        <!-- <app-activity-panel>\n          \n        </app-activity-panel> -->\n        <router-outlet></router-outlet>\n    </amexio-homepage-centerpanel>\n</amexio-homepage-ce>\n<!-- <div class=\"top-nav-padding\">\n    <router-outlet></router-outlet>\n</div> -->\n");
 
 /***/ }),
 
@@ -840,6 +840,13 @@ let HomeComponent = class HomeComponent {
         });
     }
     externalLink(event) {
+    }
+    externalLinkClick(event) {
+        console.log(event);
+        if (event.data.text == 'Logout') {
+            this._route.navigate(['login']);
+            this.cookieService.delete('tokenId');
+        }
     }
     getNodeData(data) {
         console.log(data.link);
